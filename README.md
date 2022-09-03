@@ -4,6 +4,7 @@
 - Multi-thread wget. MWget is a "MultiLine" wget for all POSTX System!
 - **Install**
   ```sh
+  sudo apt install pkg-config libssl-dev intltool
   chmod a+x configure
   ./configure && make && make install
   ```
@@ -15,4 +16,8 @@
   ```sh
   # -n specific num downloading threads
   mwget -n 20 http://xxxx
+  ```
+- Clean source
+  ```sh
+  rm src/*.o src/.deps/ Makefile po/Makefile po/Makefile.in src/Makefile src/mwget libtool config.log config.status  -rf
   ```
